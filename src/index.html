@@ -1,41 +1,371 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/6629e20d42.js" crossorigin="anonymous"></script>
+    <!-- Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <!--GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/navbar.css">
+    <link rel="stylesheet" href="./css/landing.css">
+    <title>Fund Raising Organisation | About</title>
 </head>
-
 <body>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+            </ul>
+            <div class="side-bar d-flex justify-content-around">
+                <i class="fa fa-search"></i>
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Donate</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header stops here -->
+
+    <!-- The main body -->
+    <main>
+        <div class="sliderWrapper">
+            <div class="mySlider">
+                <div class="slideItem">
+                    <img src="./img/19.png" alt="">
+                </div>
+                <div class="slideItem">
+                    <img src="./img/3.png" alt="">
+                </div>
+                <div class="slideItem">
+                    <img src="./img/4.jpg" alt="">
+                </div>
+                <div class="slideItem">
+                    <img src="./img/9.jpg" alt="">
+                </div>
+            </div>
+    
+            <div class="slideText">
+                <p class="lets_come">Let’s come Together</p>
+                <p class="slider_coming">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    sed do eiusmod temporincididuntut labore
+                    et dolore magna miniman veniam.</p>
+                <button class="red_button">Dontate</button>
+            </div>
+        </div>
+    
+        <div class="container-fluid">
+            <div class="row">
+                <div  class="accomodate">
+                    <div style="width: 100%; height: 40px; position: absolute; top: 50%; left: 0; margin-top: -20px; line-height:19px; text-align: center; z-index: 999999999999999">
+                        75%
+                    </div>
+                    <canvas id="percentage" width="100" height="100"></canvas>
+                    <p class="target">Raised</p>
+                </div>
+                <div  class="accomodate">
+                    <div style="width: 100%; height: 40px; position: absolute; top: 50%; left: 0; margin-top: -20px; line-height:19px; text-align: center; z-index: 999999999999999">
+                        $1b
+                    </div>
+                    <canvas id="money" width="100" height="100"></canvas>
+                    <p class="target">Goals</p>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <p class="foundation_and_event">Foundation and Events</p>
+                    <hr class="red_underline">
+                    <p class="de_foundation_class">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit, sed do eiusmod tempo
+                        rincididuntut laboreet dolore magna
+                        miniman veniam.</p>
+                </div>
+            </div> 
+    
+            <div class="row help_a_child align-items-center justify-content-center">
+                <div class="col-md-4 ">
+                    <p class="help_child">Help A <span>GIRL CHILD</span> </P>
+                    <p class="today">Today </p>
+                    <p class="help_child_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod temporincididuntut labore
+                        et dolore magna miniman veniam.</p>
+                    <div class="help_buttons">
+                        <button class="red_button">Donate</button>
+                        <button class="neutral_btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row ourLatest justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <p>Our Latest <span> Cause</span></p>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row justify-content-around offers"> 
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Education</h5>
+                      <p class="offer_title">IDP Programs</p>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="the_scroll">
+                        <div class="theProgress" style="width: 100%;"></div>
+                      </div>  
+                      <div class="amount_and_goal">
+                        <p>Raised: $ 2,893,342</p>
+                        <p>Goals: $ 1,000,000</p>
+                      </div>
+                    </div>             
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/18.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mediaction</h5>
+                      <p class="offer_title">IDP Programs</p>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="the_scroll">
+                        <div class="theProgress" style="width: 90%;"></div>
+                      </div> 
+                      <div class="amount_and_goal">
+                        <p>Raised: $ 750, 000</p>
+                        <p>Goals: $ 1,000,000</p>
+                      </div>
+                    </div>     
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/20.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Education</h5>
+                      <p class="offer_title">IDP Programs</p>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="the_scroll">
+                        <div class="theProgress" style="width: 75%;"></div>
+                      </div>
+                      <div class="amount_and_goal">
+                        <p>Raised: $ 900,120</p>
+                        <p>Goals: $ 1,000,000</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="sponsors row justify-content-around">
+            <div class="sponsor_image">
+                <img src="./img/1.png" alt="">
+            </div>
+            <div class="sponsor_image">
+                <img src="./img/2.png" alt="">
+            </div>
+            <div class="sponsor_image">
+                <img src="./img/3.png" alt="">
+            </div>
+            <div class="sponsor_image">
+                <img src="./img/5.png" alt="">
+            </div>
+        </div>
+    
+        <div class="container upcoming_events">
+            <div class="row ourLatest justify-content-center align-items-center">
+                <div class="col-md-5">
+                    <p>Upcoming<span> Events</span></p>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row oneEvent">
+                <div class="event_image col-md-6">
+                    <img src="./img/21.png" alt="" />
+                    <div class="event_calendar">
+                        <p>28</p>
+                        <p>June</p>
+                    </div>
+                </div>
+                <div class="col-md-6 event_detail">
+                    <p class="name_of_event">Walk for CANCER</p>
+                    <p class="event_description">Lorem ipsum dolor sit amet, corpora detracto nec ne. Idaliquidal
+                        concludaturque vim, quem nihil mea in. Duoatenem inani dolores
+                        voluptatum. Est conven Lorem ipsum dolor sit amet,
+                        corpora detracto nec ne. Idaliquidal concludaturque vim, quem 
+                        nihil mea in. Duoatenem inani dolores voluptatum. Est conven
+                    </p>
+                    <div class="join_and_read_btn">
+                        <button class="join_us_btn">Join Us</button>
+                        <button class="read_more_btn">Read More</button>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="row oneEvent">
+                <div class="col-md-6 event_detail">
+                    <p class="name_of_event">Buy a child Mill</p>
+                    <p class="event_description">Lorem ipsum dolor sit amet, corpora detracto nec ne. Idaliquidal
+                        concludaturque vim, quem nihil mea in. Duoatenem inani dolores
+                        voluptatum. Est conven Lorem ipsum dolor sit amet,
+                        corpora detracto nec ne. Idaliquidal concludaturque vim, quem 
+                        nihil mea in. Duoatenem inani dolores voluptatum. Est conven
+                    </p>
+                    <div class="join_and_read_btn">
+                        <button class="join_us_btn">Join Us</button>
+                        <button class="read_more_btn">Read More</button>
+                    </div>
+    
+                </div>
+                <div class="event_image col-md-6">
+                    <img src="./img/19.png" alt="" />
+                    <div class="event_calendar" style="right: 0; left: unset;">
+                        <p>15</p>
+                        <p>July</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row oneEvent">
+                <div class="event_image col-md-6">
+                    <img src="./img/13.png" alt="" />
+                    <div class="event_calendar" >
+                        <p>15</p>
+                        <p>Aug</p>
+                    </div>
+                </div>
+                <div class="col-md-6 event_detail">
+                    <p class="name_of_event">One COFFEE at a Time</p>
+                    <p class="event_description">Lorem ipsum dolor sit amet, corpora detracto nec ne. Idaliquidal
+                        concludaturque vim, quem nihil mea in. Duoatenem inani dolores
+                        voluptatum. Est conven Lorem ipsum dolor sit amet,
+                        corpora detracto nec ne. Idaliquidal concludaturque vim, quem 
+                        nihil mea in. Duoatenem inani dolores voluptatum. Est conven
+                    </p>
+                    <div class="join_and_read_btn">
+                        <button class="join_us_btn">Join Us</button>
+                        <button class="read_more_btn">Read More</button>
+                    </div>
+    
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="container_fluid take_action">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <p class="become_volunter">Become a Volunteer</p>
+                    <p class="volunt_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod temporincididuntut labore
+                        et dolore magna miniman veniam.
+                    </p>
+                    <form>
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">  
+                        </div>
+                        <div class="submitEmail">
+                            <button type="submit" class="btn btn-primary">Take Action</button>
+                        </div>
+                      </form>
+    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- End of main body -->
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer row">
+            <div class="logo col-md-3 col-sm-12">
+                <h3>Logo</h3>
+                <p>Our team gathers thousands of volunteers with a mission to help others. Helping is caring</p>
+            </div>
+            <div class="explore col-md-3 col-sm-12">
+                <h3>Explore</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Donations</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                    <li>Blog</li>
+                    <li>Cause</li>
+                </ul>
+            </div>
+            <div class="information col-md-3 col-sm-12">
+                <h3>Information</h3>
+                <ul>
+                    <li>Our Vision</li>
+                    <li>Frequently Asked Questions</li>
+                    <li>Volunteers Program</li>
+                    <li>Privacy Policy</li>
+                    <li>Legal Notice</li>
+                    <li>Terms & Conditions</li>
+                    <li>Sponsors</li>
+                    <li>Events</li>
+                    <li>Volunteers</li>
+                </ul>
+            </div>
+            <div class="connect col">
+                <h3>Subscribe for our Newsletter</h3>
+                <form>
+                    <div class="footer-input">
+                        <input type="name" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="footer-input">
+                        <input type="email" name="email" id="email" placeholder="Subscribe">
+                    </div>
+                    <button class="footer-button">SIGN UP</button>
+                </form>
+                <div class="social d-flex">
+
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-twitter"></i>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
-
 </html>
