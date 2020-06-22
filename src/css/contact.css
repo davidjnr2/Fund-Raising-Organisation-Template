@@ -1,0 +1,53 @@
+.contact-us {
+    background: #E5E5E5;
+}
+
+.write-us .line {
+    width: 40px;
+    margin-top: -10px;
+    border-bottom: 4px solid #E44848;
+    border-radius: 15px;
+}
+
+.write-us p {
+    margin: 20px 0px 20px 0px;
+    color: gray;
+}
+
+.write-us .form input {
+    padding: 20px;
+}
+
+.write-us .form textarea {
+    padding: 15px;
+    height: 10em;
+}
+
+.write-us .form button {
+    background: #E44848;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 70px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/*Offices*/
+.office .line {
+    width: 40px;
+    margin-top: -10px;
+    border-bottom: 4px solid #E44848;
+    border-radius: 15px;
+}
+
+.office p {
+    margin: 20px 0px 20px 0px;
+    color: gray;
+}
+
+.address, .phone, .email {
+    margin-top: 40px;
+}
+
+.office h4 img {
+    margin-right: 15px;
+}
