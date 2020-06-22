@@ -1,0 +1,181 @@
+/* start of overall styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 1rem;
+  text-align: center;
+  overflow-x: hidden;
+
+}
+
+/* end of overall styles */
+
+/* start of the blue section with the name gallery styles */
+
+.blue__div {
+  background-color: #070629;
+  height: 12.5rem;
+}
+
+
+.blue__div h1 {
+  position: relative;
+  top: 50%;
+  left: 13%;
+  transform: translateY(-50%);
+}
+
+/* end of the blue section with the name gallery styles */
+
+/* start of gallery section styles */
+
+.my__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 350px 150px 350px 350px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+
+.gallery__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* allow us to position those labels */
+}
+
+.gallery__item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery__item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.gallery__item:hover .image img {
+  transform: scale(1.1);
+}
+
+.gallery__item .text {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.66);
+  width: 100%;
+  transform: translate(-50%, -50%);  /* makes the text now be at the center */
+  pointer-events: none; /* makes sure text does not receive any clicks */
+  z-index: 5;  /* makes sure text is infront of image when we start doing some animating */
+  transition: .3s ease-in-out;
+  backdrop-filter: blur(1px) saturate(1.8);
+  color: white;
+  padding: 0rem;
+  -webkit-backdrop-filter: blur(1px) saturate(1.8);
+  text-align: left;
+  align-items: left;
+  padding-left: 5rem;
+}
+
+.gallery__item .text h5 {
+  color: black;
+}
+
+.gallery__item .text p {
+  color: #E44848;
+}
+
+.width__1 {
+  grid-column: span 1;
+}
+
+.width__2 {
+  grid-column: span 2;
+}
+
+.width__3 {
+  grid-column: span 3;
+}
+
+.height__1 {
+  grid-row: span 1;
+}
+
+.height__2 {
+  grid-row: span 2;
+}
+
+.height__3 {
+  grid-row: span 3;
+}
+
+/* end of gallery section styles */
+
+/* start of the become a volunteer section styles */
+
+.become__volunteer {
+  background-color: #E44848;
+  height: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end of the become a volunteer section styles */
+
+/* start of media queries */
+
+@media screen and (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .blue__div h1 {
+    font-size: 2rem;
+  }
+
+  .my__container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px 350px 250px 260px 260px 200px;
+  }
+
+  .gallery__item .text p,
+  h5 {
+    font-size: smaller;
+  }
+
+  h1 {
+    font-size: smaller;
+  }
+
+  .width__1,
+  .width__2,
+  .width__3 {
+    grid-column: span 1;
+  }
+
+  .height__1,
+  .height__2,
+  .height__3 {
+    grid-row: span 1;
+  }
+ 
+  .become__volunteer h1 {
+    font-size: 1.5rem;
+  }
+
+}
+
+/* end of media queries */
