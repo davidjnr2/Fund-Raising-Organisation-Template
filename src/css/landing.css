@@ -23,7 +23,8 @@ body{
 
 .carousel-caption {
     position: absolute;
-    top: 32%;
+    height: 100%;
+    top: 10%;
     text-shadow: 2px 2px #000000;
 }
 
@@ -78,10 +79,6 @@ body{
 
 @media screen and (max-width: 500px) {
 
-    .carousel-item {
-        height: 60vh;
-    }
-
     .carousel-indicators li {
         width: 5px;
         height: 5px;
@@ -106,7 +103,22 @@ body{
 }
 
 
+
 /* end of carousel styles */
+
+.red_button{
+    font-size: 20px;
+    padding: 7px 50px;
+    background-color: #E44848;
+    color: white;
+    border: 1px solid #E44848;
+    border-radius: 5px;
+}
+.red_button:hover{
+    background-color: white;
+    color: #E44848;
+}
+
 
 .accomodate{
     width:200px; 
@@ -193,6 +205,7 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
 .neutral_btn{
     background-color: transparent;
     border-radius: 10px;
@@ -393,7 +406,12 @@ body{
 }
 
 @media(min-width:800px){
-
+    #caption__heading{
+        height: 700px;
+    }
+    .caption__heading{
+        font-size: 55px;
+    }
     .de_foundation_class{
         font-size: 20px;
     }

@@ -1,3 +1,6 @@
+// Initiating animation on scroll
+AOS.init();
+
 
 // The chart script 
 
@@ -15,6 +18,9 @@ var myPercentage = new Chart(raisePercentage, {
                 'rgb(228, 72, 72)',
             ],
         }]
+    },
+    options: {
+        cutoutPercentage: 90
     }
 });
 
@@ -27,7 +33,10 @@ var myPercentage = new Chart(amountRaised, {
                 'rgb(245, 245, 245)',
                 'rgb(228, 72, 72)',
             ],
-        }]
+        }],
+    },
+    options: {
+        cutoutPercentage: 90
     }
 });
 
